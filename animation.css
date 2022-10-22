@@ -1,0 +1,32 @@
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+}
+.stage{
+    background-color: rgb(21, 249, 215);
+    height: 240px;
+    min-width: 800px;
+}
+@keyframes slidein{
+    0%{
+        left: 0px;
+        top: 0px;
+        background-color: yellow;
+    }
+    50%{
+        left: 400px;
+        top: 150px;
+        background-color: red;
+    }
+    100%{
+        left: 800px;
+        top: 0px;
+        background-color: yellow;
+    }
+}
+.stage:hover .ball{
+    animation: slidein 3s ease-in-out 1s infinite alternate ;
+}

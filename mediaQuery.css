@@ -1,0 +1,30 @@
+.food img{
+   width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.food{
+    border: 3px solid  rgb(231, 83, 3);
+    border-radius: 10px;
+    margin:10px ;
+    width: 450px;
+}
+@media (max-width:760px){
+    .container{
+        flex-direction: column;
+    }
+    .container .food{
+        background-color:rgb(230, 220, 213) ;
+        color: rgb(0, 0, 0);
+        border: 3px solid rgb(210, 0, 0);
+    }
+}
+@media (min-width:1200px){
+    .container .food{
+        background-color: skyblue;
+    }
+}

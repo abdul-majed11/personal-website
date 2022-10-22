@@ -1,0 +1,19 @@
+.box{
+    border: 3px solid greenyellow;
+
+}
+/* .grid{
+    display: grid;
+   grid-template-columns: 150px 150px 150px 100px; 
+   grid-gap: 20px;
+} */
+/* .grid{
+    display: grid;
+   grid-template-columns:repeat(3,350px); 
+   grid-gap: 20px;
+} */
+.grid{
+    display: grid;
+   grid-template-columns:repeat(6, 1fr); 
+   grid-gap: 20px;
+}
